@@ -182,8 +182,8 @@ public class WheelView extends View {
 		this.ind9.setBounds(0, center[1] - h9, this.getWidth(), center[1] + h9);
 		this.ind9.draw(canvas);
 		// DEBUG
-		canvas.drawText("" + _adp.getCurIndex(), 10, 10, ip);
-		canvas.drawText("" + this.curPos + " -> " +this.targetPos, 10, 20, ip);
+		//canvas.drawText("" + _adp.getCurIndex(), 10, 10, ip);
+		//canvas.drawText("" + this.curPos + " -> " +this.targetPos, 10, 20, ip);
 	}
 
 	@Override
