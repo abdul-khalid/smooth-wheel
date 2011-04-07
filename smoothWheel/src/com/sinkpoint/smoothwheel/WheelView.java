@@ -15,8 +15,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ScrollView;
 
-import com.sinkpoint.wheelspinner.R;
-
 public class WheelView extends View {
 	private static final String TAG = "WHEELSPINNER";
 	private WheelAdapter _adp;
@@ -172,16 +170,18 @@ public class WheelView extends View {
 			this.invalidate();
 		}
 
-		Paint ip = new Paint();
-		ip.setColor(Color.RED);
-		ip.setAlpha(220);
-		ip.setStrokeWidth(1);
-		canvas.drawLine(0, center[1], getWidth(), center[1], ip);
+		
 		int h9 = this.TEXT_SIZE / 2;
 
 		this.ind9.setBounds(0, center[1] - h9, this.getWidth(), center[1] + h9);
 		this.ind9.draw(canvas);
+		
 		// DEBUG
+//		Paint ip = new Paint();
+//		ip.setColor(Color.RED);
+//		ip.setAlpha(220);
+//		ip.setStrokeWidth(1);
+//		canvas.drawLine(0, center[1], getWidth(), center[1], ip);		
 		//canvas.drawText("" + _adp.getCurIndex(), 10, 10, ip);
 		//canvas.drawText("" + this.curPos + " -> " +this.targetPos, 10, 20, ip);
 	}
