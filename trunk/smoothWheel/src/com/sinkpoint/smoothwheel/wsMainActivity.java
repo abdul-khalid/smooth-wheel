@@ -1,7 +1,5 @@
 package com.sinkpoint.smoothwheel;
 
-import com.sinkpoint.wheelspinner.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 
